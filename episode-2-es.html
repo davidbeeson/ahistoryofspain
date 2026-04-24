@@ -4,40 +4,156 @@
 <meta charset="UTF-8">
 <title>Episodio 2 – Créditos de imágenes (Español)</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-  line-height: 1.6;
-}
-h1 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 24px;
-}
-.credit {
-  margin-bottom: 24px;
-}
-.title {
-  font-weight: bold;
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
+  :root {
+    --bg: #f7f4ee;
+    --panel: #fffdf9;
+    --text: #2f2a24;
+    --muted: #6b6258;
+    --line: #ddd4c7;
+    --link: #8b4513;
+    --link-hover: #a85a22;
+    --heading: #3e3328;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  .container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+  }
+
+  header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    margin: 0 0 0.35rem;
+    font-size: 2rem;
+    color: var(--heading);
+  }
+
+  .subtitle {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1rem;
+  }
+
+  nav.toc {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  nav.toc h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    color: var(--heading);
+  }
+
+  nav.toc ul {
+    margin: 0;
+    padding-left: 1.2rem;
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  nav.toc li {
+    margin: 0.2rem 0;
+  }
+
+  section.group {
+    margin: 2.5rem 0;
+  }
+
+  section.group > h2 {
+    font-size: 1.4rem;
+    color: var(--heading);
+    border-bottom: 2px solid var(--line);
+    padding-bottom: 0.35rem;
+    margin-bottom: 1rem;
+  }
+
+  .credit {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 1rem 1rem 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    margin: 0 0 0.5rem;
+    font-weight: bold;
+    font-size: 1.08rem;
+    color: var(--heading);
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--link-hover);
+    text-decoration: underline;
+  }
+
+  .back-to-top {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 700px) {
+    nav.toc ul {
+      columns: 1;
+    }
+
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
 </style>
 </head>
 <body>
+  <div class="container">
+    <header id="top">
+      <h1>Episodio 2 – Créditos de imágenes (Español)</h1>
+      <p class="subtitle"><em>A History of Spain in English</em></p>
+      <p><a href="index.html">← Volver a la página principal</a></p>
+    </header>
 
-<h1>Episodio 2 – Créditos de imágenes (Español)</h1>
+    <nav class="toc" aria-label="Contenido">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="#prehistoria">Monumentos megalíticos y yacimientos prehistóricos</a></li>
+        <li><a href="#agricultura">Agricultura, animales y vida rural</a></li>
+        <li><a href="#campaniforme">Campaniforme y artefactos del Cobre/Bronce</a></li>
+        <li><a href="#mapas">Mapas y diagramas</a></li>
+        <li><a href="#bronce">Edad del Bronce y cultura material</a></li>
+        <li><a href="#violencia">Imágenes históricas, comparativas y de conflicto</a></li>
+        <li><a href="#iberia">Iberia en la Edad del Bronce y sitios posteriores</a></li>
+      </ul>
+    </nav>
 
-<p><a href="index.html">← Volver a la página principal</a></p>
-
-  <div class="credit">
-  <div class="title">Map of Iberia</div>
-  Autor: Hessel Gerritsz<br>
-  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Map_-_Special_Collections_University_of_Amsterdam_-_OTM-_HB-KZL_32.22.12.tif">Link</a><br>
-  Licencia: Dominio público
-</div>
+    <section class="group" id="prehistoria">
+      <h2>Monumentos megalíticos y yacimientos prehistóricos</h2>
 
 <div class="credit">
   <div class="title">Praia das Maçãs Prehistoric Monument, near Colares, Sintra, Portugal</div>
@@ -47,14 +163,14 @@ h1 {
 </div>
 
 <div class="credit">
-  <div class="title">Dolmen and Torcal</div>
+  <div class="title">Dólmen y Torcal</div>
   Autor: Tony Makepeace<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Dolmen_and_Torcal-008.jpg">Link</a><br>
   Licencia: CC BY 2.0
 </div>
 
 <div class="credit">
-  <div class="title">Sobrado Tomb entrance</div>
+  <div class="title">Entrada de la tumba de Sobrado</div>
   Autor: David Beeson<br>
   Fuente: Fotografía propia<br>
   Licencia: Obra original
@@ -67,323 +183,360 @@ h1 {
   Licencia: CC BY-SA 2.5
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="agricultura">
+      <h2>Agricultura, animales y vida rural</h2>
+
 <div class="credit">
-  <div class="title">A ripe wheat crop in summer</div>
+  <div class="title">Un campo de trigo maduro en verano</div>
   Autor: PakZin O (Unsplash)<br>
   Fuente: <a href="https://unsplash.com/photos/a-field-of-tall-grass-with-the-sun-in-the-background-4S1YxNaj0uE">Link</a><br>
   Licencia: Licencia Unsplash
 </div>
 
 <div class="credit">
-  <div class="title">Sheep grazing at Begunjščica</div>
+  <div class="title">Ovejas pastando en Begunjščica</div>
   Autor: Ajznponar<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Sheep_grazing_at_Begunjscica_01.jpg">Link</a><br>
   Licencia: CC0
 </div>
 
 <div class="credit">
-  <div class="title">Neolithic village from above</div>
+  <div class="title">Poblado neolítico visto desde arriba</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Animated representation of merging of neolithic farmer and hunter-gatherer genetic lines</div>
+  <div class="title">Representación animada de la fusión de las líneas genéticas de agricultores neolíticos y cazadores-recolectores</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Adopting the farming life</div>
+  <div class="title">Adopción de la vida agrícola</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
-<div class="credit">
-  <div class="title">The Proto-Indo-European homeland</div>
-  Autor: Joe Roe<br>
-  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Indo-European_steppe_homeland_map.svg">Link</a><br>
-  Licencia: CC BY-SA 4.0
-</div>
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="campaniforme">
+      <h2>Campaniforme y artefactos del Cobre/Bronce</h2>
 
   <div class="credit">
-  <div class="title">Yamnaya Pastoralists</div>
+  <div class="title">Pastores yamna</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Yamnaya Warriors</div>
+  <div class="title">Guerreros yamna</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Bell beaker period wagon illustration</div>
+  <div class="title">Ilustración de carro de la época campaniforme</div>
   Autor: HistoryMaker18<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bell_Beaker_period_wagon_illustration.png">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Prehistoric dagger of Copper Age</div>
+  <div class="title">Daga prehistórica de la Edad del Cobre</div>
   Autor: José Manuel Benito Álvarez<br>
   Fuente: <a href="https://commons.wikimedia.org/w/index.php?curid=1275188">Link</a><br>
   Licencia: Dominio público
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European Expansion Map</div>
-  Autor: Koba-chan Drawings<br>
-  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Indo-European_expansions.jpg">Link</a><br>
-  Licencia: CC BY-SA 3.0
-</div>
-
-<div class="credit">
-  <div class="title">Shrewton Bell Beaker Burial</div>
+  <div class="title">Entierro campaniforme de Shrewton</div>
   Autor: Toby Editor<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Shrewton_Beaker_Burial.jpg">Link</a><br>
   Licencia: CC BY 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Early Bronze Age copper tanged dagger (Beaker period)</div>
+  <div class="title">Daga de cobre con espiga de la Edad del Bronce temprana (período campaniforme)</div>
   Autor: Portable Antiquities Scheme<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Witton_Gilbert,_Early_Bronze_Age_Beaker_period_copper_tanged_dagger_(FindID_52075).jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Bell-beakers in Thickthorn Down burial</div>
+  <div class="title">Vasos campaniformes en el enterramiento de Thickthorn Down</div>
   Autor: Pasicles<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Thickthorn_Down_bell-beakers.jpg">Link</a><br>
   Licencia: CC0
 </div>
 
 <div class="credit">
-  <div class="title">Bell Beaker culture vessel</div>
+  <div class="title">Vaso de la cultura campaniforme</div>
   Autor: Zde<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Beaker_2.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Scientists checking DNA test results</div>
+  <div class="title">Científicos revisando resultados de pruebas de ADN</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Bell beaker artefacts from Spain</div>
+  <div class="title">Artefactos campaniformes de España</div>
   Autor: Archivo Museo Numantino<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bell_Beaker_artefacts,_Spain.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Stone knife and copper daggers</div>
+  <div class="title">Cuchillo de piedra y dagas de cobre</div>
   Autor: Bjoertvedt<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bronze_age_2600-2000BC_Bell-beaker_Csepel_Group_IMG_0986_stone_knife_and_copper_daggers.JPG">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Arrival of the Indo-Europeans in Iberia</div>
+  <div class="title">Llegada de los indoeuropeos a Iberia</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">The Procession of the Trojan Horse in Troy (cropped)</div>
-  Autor: Giovanni Domenico Tiepolo<br>
-  Fuente: <a href="https://commons.wikimedia.org/wiki/File:The_Procession_of_the_Trojan_Horse_in_Troy_by_Giovanni_Domenico_Tiepolo_(cropped).jpg">Link</a><br>
-  Licencia: Dominio público
-</div>
-
-  <div class="credit">
-  <div class="title">Bell beaker from Ciempozuelos, Spain</div>
+  <div class="title">Vaso campaniforme de Ciempozuelos, España</div>
   Autor: Verónica Schulmeister Guillém<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_32252_-_Vaso_de_Ciempozuelos.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European encampment in Iberia</div>
+  <div class="title">Campamento indoeuropeo en Iberia</div>
+  Autor: A History of Spain (generado con ChatGPT)<br>
+  Fuente: Creado para este episodio<br>
+  Licencia: Obra original
+</div>
+
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="mapas">
+      <h2>Mapas y diagramas</h2>
+
+<div class="credit">
+  <div class="title">Mapa de Iberia</div>
+  Autor: Hessel Gerritsz<br>
+  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Map_-_Special_Collections_University_of_Amsterdam_-_OTM-_HB-KZL_32.22.12.tif">Link</a><br>
+  Licencia: Dominio público
+</div>
+
+<div class="credit">
+  <div class="title">La patria protoindoeuropea</div>
+  Autor: Joe Roe<br>
+  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Indo-European_steppe_homeland_map.svg">Link</a><br>
+  Licencia: CC BY-SA 4.0
+</div>
+
+<div class="credit">
+  <div class="title">Mapa de la expansión indoeuropea</div>
+  Autor: Koba-chan Drawings<br>
+  Fuente: <a href="https://commons.wikimedia.org/wiki/File:Indo-European_expansions.jpg">Link</a><br>
+  Licencia: CC BY-SA 3.0
+</div>
+
+<div class="credit">
+  <div class="title">Cromosomas X e Y</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">X and Y chromosomes</div>
+  <div class="title">Expansión en Iberia de la ascendencia esteparia indoeuropea (fotograma 1)</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European steppe ancestry spreading in Iberia (Frame 1)</div>
+  <div class="title">Expansión en Iberia de la ascendencia esteparia indoeuropea (fotograma 2)</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European steppe ancestry spreading in Iberia (Frame 2)</div>
+  <div class="title">Expansión en Iberia de la ascendencia esteparia indoeuropea (fotograma 3)</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European steppe ancestry spreading in Iberia (Frame 3)</div>
+  <div class="title">Expansión en Iberia de la ascendencia esteparia indoeuropea (fotograma 4)</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European steppe ancestry spreading in Iberia (Frame 4)</div>
+  <div class="title">Cómo se hereda el ADN y, en concreto, el cromosoma Y</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">How DNA and specifically the Y chromosome are passed on</div>
+  <div class="title">Sustitución del ADN de los agricultores neolíticos por ADN indoeuropeo</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
-<div class="credit">
-  <div class="title">Replacement of neolithic farmer DNA by Indo-European DNA</div>
-  Autor: A History of Spain (generado con ChatGPT)<br>
-  Fuente: Creado para este episodio<br>
-  Licencia: Obra original
-</div>
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="bronce">
+      <h2>Edad del Bronce y cultura material</h2>
 
 <div class="credit">
-  <div class="title">Late Bronze Age sword</div>
+  <div class="title">Espada de la Edad del Bronce tardía</div>
   Autor: Rama<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Late_Bronze_Age_swords-on_display_1-A-P4140327-white.jpg">Link</a><br>
   Licencia: CC BY-SA 3.0 fr
 </div>
 
 <div class="credit">
-  <div class="title">Pierre-Auguste Renoir: Wheatfield</div>
+  <div class="title">Pierre-Auguste Renoir: Campo de trigo</div>
   Autor: Museo Thyssen-Bornemisza (fotografía)<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Campo_de_trigo.jpg">Link</a><br>
   Licencia: Dominio público
 </div>
 
 <div class="credit">
-  <div class="title">Cow and calf in a field</div>
+  <div class="title">Vaca y ternero en un campo</div>
   Autor: David Beeson<br>
   Fuente: Fotografía propia<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Farmer with horse and cart</div>
+  <div class="title">Campesino con caballo y carro</div>
   Autor: David Beeson<br>
   Fuente: Fotografía propia<br>
   Licencia: Obra original
 </div>
 
   <div class="credit">
-  <div class="title">Wheat grains from harvest in South Australia</div>
+  <div class="title">Granos de trigo de una cosecha en Australia Meridional</div>
   Autor: CSIRO<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_4029_Wheat_grains_from_harvest_in_the_mid_north_of_South_Australia_1992.jpg">Link</a><br>
   Licencia: CC BY 3.0
 </div>
 
 <div class="credit">
-  <div class="title">Pithoi in Knossos</div>
+  <div class="title">Pithoi en Cnosos</div>
   Autor: Autor desconocido<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Pithoi_in_Knossos.jpg">Link</a><br>
   Licencia: CC BY-SA 3.0
 </div>
 
 <div class="credit">
-  <div class="title">Bronze Age Gold Diadem (Caravaca de la Cruz)</div>
+  <div class="title">Diadema de oro de la Edad del Bronce (Caravaca de la Cruz)</div>
   Autor: Verónica Schulmeister Guillén<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Museo_Arqueol%C3%B3gico_Nacional_-_33114_-_Diadema_de_Caravaca_de_la_Cruz_01.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Bronze Age Spearheads</div>
+  <div class="title">Puntas de lanza de la Edad del Bronce</div>
   Autor: Portable Antiquities Scheme / British Museum<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bronze_Age,_Spearhead_Spear_(FindID_147067).jpg">Link</a><br>
   Licencia: CC BY-SA 2.0
 </div>
 
 <div class="credit">
-  <div class="title">Two bowls from the Late Bronze Age</div>
+  <div class="title">Dos cuencos de la Edad del Bronce tardía</div>
   Autor: Luis García<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Cuencos_de_Axtroki_(M.A.N._1973-77)_01.jpg">Link</a><br>
   Licencia: CC BY-SA 3.0
 </div>
 
 <div class="credit">
-  <div class="title">Bronze Age Celts</div>
+  <div class="title">Hachas de talón de la Edad del Bronce</div>
   Autor: Autor desconocido<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bronze_celts_(OAW).png">Link</a><br>
   Licencia: Dominio público
 </div>
 
 <div class="credit">
-  <div class="title">Magan replica boat</div>
+  <div class="title">Réplica de barco de Magan</div>
   Autor: Clmorgan<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Magan_replica_boat_at_the_Sheik_Zayed_Museum.jpg">Link</a><br>
   Licencia: CC BY 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Villena Treasure</div>
+  <div class="title">Tesoro de Villena</div>
   Autor: Autor desconocido<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Tesoro_de_Villena.jpg">Link</a><br>
   Licencia: CC BY-SA 3.0
 </div>
 
 <div class="credit">
-  <div class="title">Chalcolithic sieve and beads</div>
+  <div class="title">Tamiz calcolítico y cuentas</div>
   Autor: Gary Todd<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Chalcolithic_Reed_%26_Straw_Sieve_and_Beads,_4500-3500_BC_(43216543731).jpg">Link</a><br>
   Licencia: CC0
 </div>
 
 <div class="credit">
-  <div class="title">Treasure of Nahal Mishmar</div>
+  <div class="title">Tesoro de Nahal Mishmar</div>
   Autor: Hanay<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Treasure_of_Nahal_Mishmar_(5).JPG">Link</a><br>
   Licencia: CC BY-SA 3.0
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="violencia">
+      <h2>Imágenes históricas, comparativas y de conflicto</h2>
+
 <div class="credit">
-  <div class="title">Forest (blended clip)</div>
+  <div class="title">La procesión del caballo de Troya en Troya (recortada)</div>
+  Autor: Giovanni Domenico Tiepolo<br>
+  Fuente: <a href="https://commons.wikimedia.org/wiki/File:The_Procession_of_the_Trojan_Horse_in_Troy_by_Giovanni_Domenico_Tiepolo_(cropped).jpg">Link</a><br>
+  Licencia: Dominio público
+</div>
+
+<div class="credit">
+  <div class="title">Bosque (clip mezclado)</div>
   Autor: David Beeson<br>
   Fuente: Fotografía propia<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Ploughed field in Inchinnan</div>
+  <div class="title">Campo arado en Inchinnan</div>
   Autor: wfmillar<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Ploughed_Field,_Inchinnan_-_geograph.org.uk_-_1701821.jpg">Link</a><br>
   Licencia: CC BY-SA 2.0
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European warrior threatening village</div>
+  <div class="title">Guerrero indoeuropeo amenazando a una aldea</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
@@ -404,84 +557,90 @@ h1 {
 </div>
 
 <div class="credit">
-  <div class="title">Human skull broken by axe</div>
+  <div class="title">Cráneo humano roto por un hacha</div>
   Autor: Wolfgang Sauber<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:MUFT_-Sch%C3%B6nstedt_Niederb%C3%B6sa_Kampfspuren.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Bell Beaker copper daggers</div>
+  <div class="title">Dagas de cobre campaniformes</div>
   Autor: Tylwyth Eldar<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bell_Beaker_copper_daggers_6.jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Traces of destroyed villages</div>
+  <div class="title">Rastros de aldeas destruidas</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Skeletal evidence of violence in Late Neolithic Europe</div>
+  <div class="title">Evidencia esquelética de violencia en la Europa del Neolítico tardío</div>
   Autor: Teresa Fernández-Crespo et al.<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:San_Juan_ante_Portam_Latinam.jpg">Link</a><br>
   Licencia: CC BY 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Indo-European encampment with marginalized neolithic population</div>
+  <div class="title">Campamento indoeuropeo con población neolítica marginada</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">King’s African Rifles in Mau Mau conflict</div>
+  <div class="title">King’s African Rifles en el conflicto del Mau Mau</div>
   Autor: UK Ministry of Defence<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:KAR_Mau_Mau.jpg">Link</a><br>
   Licencia: Dominio público
 </div>
 
 <div class="credit">
-  <div class="title">French patrol in Algeria (1957)</div>
+  <div class="title">Patrulla francesa en Argelia (1957)</div>
   Autor: Autor desconocido<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Chlef_1957_-_Guerre_d%27Algerie.png">Link</a><br>
   Licencia: Dominio público
 </div>
 
 <div class="credit">
-  <div class="title">Wealthy older man with younger brides</div>
+  <div class="title">Hombre mayor adinerado con esposas más jóvenes</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Prehistoric double burial reconstruction</div>
+  <div class="title">Reconstrucción de un enterramiento doble prehistórico</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
 <div class="credit">
-  <div class="title">Wealth marrying wealth</div>
+  <div class="title">Riqueza casándose con riqueza</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="iberia">
+      <h2>Iberia en la Edad del Bronce y sitios posteriores</h2>
+
 <div class="credit">
-  <div class="title">Bronze Age axes</div>
+  <div class="title">Hachas de la Edad del Bronce</div>
   Autor: Portable Antiquities Scheme<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Bronze_Age_Axes_(FindID_572427).jpg">Link</a><br>
   Licencia: CC BY-SA 4.0
 </div>
 
 <div class="credit">
-  <div class="title">Bronze Age bracelet</div>
+  <div class="title">Brazalete de la Edad del Bronce</div>
   Autor: Autor desconocido<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:02023_Bronze_bracelet_with_a_rhythmic_grid_motif_found_in_Storkowo_,_around_1100_BC_%E2%80%94_1000_BC.jpg">Link</a><br>
   Licencia: CC0
@@ -495,7 +654,7 @@ h1 {
 </div>
 
 <div class="credit">
-  <div class="title">Hand of Irulegi</div>
+  <div class="title">Mano de Irulegi</div>
   Autor: Argia<br>
   Fuente: <a href="https://commons.wikimedia.org/wiki/File:Irulegiko_eskua_1.jpg">Link</a><br>
   Licencia: CC BY-SA 3.0
@@ -509,7 +668,7 @@ h1 {
 </div>
 
 <div class="credit">
-  <div class="title">Three peoples</div>
+  <div class="title">Tres pueblos</div>
   Autor: A History of Spain (generado con ChatGPT)<br>
   Fuente: Creado para este episodio<br>
   Licencia: Obra original
@@ -529,5 +688,8 @@ h1 {
   Licencia: CC BY-SA 4.0
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+  </div>
 </body>
 </html>

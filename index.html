@@ -1,47 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A History of Spain</title>
   <style>
+    :root {
+      --bg: #f7f4ee;
+      --panel: #fffdf9;
+      --text: #2f2a24;
+      --muted: #6b6258;
+      --line: #ddd4c7;
+      --link: #8b4513;
+      --link-hover: #a85a22;
+      --heading: #3e3328;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
-    h1 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
     }
-    .episode {
-      margin-bottom: 20px;
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 2rem;
+      color: var(--heading);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    nav.toc {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      color: var(--heading);
+    }
+
+    nav.toc ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    nav.toc li {
+      margin: 0.2rem 0;
+    }
+
+    section.group {
+      margin: 2.5rem 0;
+    }
+
+    section.group > h2 {
+      font-size: 1.4rem;
+      color: var(--heading);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro,
+    .episode-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1rem 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .intro p {
+      margin: 0 0 0.9rem;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
+
+    .episode-card h3 {
+      margin: 0 0 0.45rem;
+      font-size: 1.08rem;
+      color: var(--heading);
+    }
+
+    .episode-card p {
+      margin: 0 0 0.75rem;
+      color: var(--muted);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1rem;
+    }
+
+    .listen-link {
+      font-weight: bold;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav.toc ul {
+        columns: 1;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      .links {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <header id="top">
+      <h1>A History of Spain / Una Historia de España</h1>
+      <p class="subtitle"><em>A visual podcast exploring the history of Spain / Un podcast visual que explora la historia de España</em></p>
+    </header>
 
-<h1>A History of Spain</h1>
+    <section class="group" id="about">
+      <h2>About</h2>
 
-<p>A visual podcast exploring the history of Spain.</p>
+      <div class="intro">
+        <p>A visual podcast exploring the history of Spain. / Un podcast visual que explora la historia de España.</p>
+        <p class="links">
+          <a class="listen-link" href="https://open.spotify.com/show/1BFnobF2mWjLkx1G6L23uO">Listen on Spotify</a>
+          <a class="listen-link" href="https://open.spotify.com/show/5ovUTcuFCryOlrUVOwpcMU">Escúchalo en Spotify</a>
+        </p>
+      </div>
+    </section>
 
-<p>
-  <a href="https://open.spotify.com/">🎧 Listen on Spotify</a>
-</p>
+    <section class="group" id="episodes">
+      <h2>Episodes</h2>
 
-<h2>Episodes</h2>
+      <div class="episode-card">
+        <h3>Episode 1</h3>
+        <p>Picture credits and related reference material. / Créditos de imágenes y material de referencia relacionado.</p>
+        <div class="links">
+          <a href="episode-1-en.html">English credits</a>
+          <a href="episode-1-es.html">Créditos en español</a>
+        </div>
+      </div>
 
-<div class="episode">
-  <strong>Episode 1</strong><br>
-  <a href="episode-1-en.html">English credits</a> |
-  <a href="episode-1-es.html">Créditos en español</a>
-</div>
+      <div class="episode-card">
+        <h3>Episode 2</h3>
+        <p>Picture credits and related reference material. / Créditos de imágenes y material de referencia relacionado.</p>
+        <div class="links">
+          <a href="episode-2-en.html">English credits</a>
+          <a href="episode-2-es.html">Créditos en español</a>
+        </div>
+      </div>
+    </section>
 
-<div class="episode">
-  <strong>Episode 2</strong><br>
-  <a href="episode-2-en.html">English credits</a> |
-  <a href="episode-2-es.html">Créditos en español</a>
-</div>
+    <footer>
+      <p>A History of Spain in English / Una Historia de España en castellano</p>
+    </footer>
+  </div>
 </body>
 </html>

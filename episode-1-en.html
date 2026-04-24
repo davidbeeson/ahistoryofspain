@@ -5,58 +5,165 @@
   <title>Picture Credits — Episode 1 | A History of Spain in English</title>
 
   <style>
+    :root {
+      --bg: #f7f4ee;
+      --panel: #fffdf9;
+      --text: #2f2a24;
+      --muted: #6b6258;
+      --line: #ddd4c7;
+      --link: #8b4513;
+      --link-hover: #a85a22;
+      --heading: #3e3328;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      background: #f7f4ee;
-      color: #2f2a24;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1rem;
     }
 
     h1 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      margin: 0 0 0.35rem;
+      font-size: 2rem;
+      color: var(--heading);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    nav.toc {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      color: var(--heading);
+    }
+
+    nav.toc ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    nav.toc li {
+      margin: 0.2rem 0;
+    }
+
+    section.group {
+      margin: 2.5rem 0;
+    }
+
+    section.group > h2 {
+      font-size: 1.4rem;
+      color: var(--heading);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
     }
 
     .credit-item {
-      background: #fffdf9;
-      border: 1px solid #ddd4c7;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1rem 0.8rem;
+      margin-bottom: 1rem;
     }
 
     .credit-item h3 {
-      margin: 0 0 6px;
-      font-size: 1.05em;
+      margin: 0 0 0.5rem;
+      font-size: 1.08rem;
+      color: var(--heading);
     }
 
-    ul {
+    .credit-item ul {
       margin: 0;
-      padding-left: 18px;
+      padding-left: 1.2rem;
+    }
+
+    .credit-item li {
+      margin: 0.15rem 0;
     }
 
     a {
-      color: #8b4513;
+      color: var(--link);
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
+      color: var(--link-hover);
       text-decoration: underline;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav.toc ul {
+        columns: 1;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <header id="top">
+      <h1>Picture Credits — Episode 1</h1>
+      <p class="subtitle"><em>A History of Spain in English</em></p>
+      <p><a href="index.html">← Back to homepage</a></p>
+    </header>
 
-<h1>Picture Credits — Episode 1</h1>
+    <nav class="toc" aria-label="Contents">
+      <h2>Sections</h2>
+      <ul>
+        <li><a href="#valltorta">Maps and Valltorta rock art</a></li>
+        <li><a href="#hunting">Hunter-gatherers, cave art interpretation, and genetics</a></li>
+        <li><a href="#farming">Farming, Neolithic life, and social change</a></li>
+        <li><a href="#iberia">Iberian landscapes, hierarchy, and archaeological sites</a></li>
+        <li><a href="#steppe">The steppe, Yamnaya, and Indo-European expansion</a></li>
+      </ul>
+    </nav>
 
-<p><a href="index.html">← Back to homepage</a></p>
+    <!-- START CREDITS -->
 
-<!-- START CREDITS -->
+    <section class="group" id="valltorta">
+      <h2>Maps and Valltorta rock art</h2>
 
 <div class="credit-item">
 <h3>Map of Iberia</h3>
@@ -139,6 +246,12 @@
 </ul>
 </div>
 
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </section>
+
+    <section class="group" id="hunting">
+      <h2>Hunter-gatherers, cave art interpretation, and genetics</h2>
+
 <div class="credit-item">
 <h3>Nederzetting van een paar families Bosjesmannen (San)</h3>
 <ul>
@@ -201,6 +314,12 @@
 <li><strong>Licence:</strong> Original work</li>
 </ul>
 </div>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </section>
+
+    <section class="group" id="farming">
+      <h2>Farming, Neolithic life, and social change</h2>
 
 <div class="credit-item">
 <h3>Map of the spread of farming into Europe up to about 3900 BC</h3>
@@ -291,6 +410,12 @@
 <li><strong>Licence:</strong> Original work</li>
 </ul>
 </div>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </section>
+
+    <section class="group" id="iberia">
+      <h2>Iberian landscapes, hierarchy, and archaeological sites</h2>
 
 <div class="credit-item">
 <h3>Map showing location of Extremadura</h3>
@@ -517,6 +642,12 @@
 </ul>
 </div>
 
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </section>
+
+    <section class="group" id="steppe">
+      <h2>The steppe, Yamnaya, and Indo-European expansion</h2>
+
 <div class="credit-item">
 <h3>The Yamnaya Culture Homeland</h3>
 <ul>
@@ -707,6 +838,8 @@
 </div>
 
 <!-- END CREDITS -->
-
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    </section>
+  </div>
 </body>
 </html>

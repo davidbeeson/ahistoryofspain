@@ -5,59 +5,165 @@
   <title>Créditos de imágenes — Episodio 1 | A History of Spain in English</title>
 
   <style>
+    :root {
+      --bg: #f7f4ee;
+      --panel: #fffdf9;
+      --text: #2f2a24;
+      --muted: #6b6258;
+      --line: #ddd4c7;
+      --link: #8b4513;
+      --link-hover: #a85a22;
+      --heading: #3e3328;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Georgia, "Times New Roman", serif;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
-      background: #f7f4ee;
-      color: #2f2a24;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 1rem;
     }
 
     h1 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      margin: 0 0 0.35rem;
+      font-size: 2rem;
+      color: var(--heading);
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    nav.toc {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    nav.toc h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.1rem;
+      color: var(--heading);
+    }
+
+    nav.toc ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+
+    nav.toc li {
+      margin: 0.2rem 0;
+    }
+
+    section.group {
+      margin: 2.5rem 0;
+    }
+
+    section.group > h2 {
+      font-size: 1.4rem;
+      color: var(--heading);
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 0.35rem;
+      margin-bottom: 1rem;
     }
 
     .credit-item {
-      background: #fffdf9;
-      border: 1px solid #ddd4c7;
-      border-radius: 8px;
-      padding: 12px;
-      margin-bottom: 14px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1rem 0.8rem;
+      margin-bottom: 1rem;
     }
 
     .credit-item h3 {
-      margin: 0 0 6px;
-      font-size: 1.05em;
+      margin: 0 0 0.5rem;
+      font-size: 1.08rem;
+      color: var(--heading);
     }
 
-    ul {
+    .credit-item ul {
       margin: 0;
-      padding-left: 18px;
+      padding-left: 1.2rem;
+    }
+
+    .credit-item li {
+      margin: 0.15rem 0;
     }
 
     a {
-      color: #8b4513;
+      color: var(--link);
       text-decoration: none;
     }
 
-    a:hover {
+    a:hover,
+    a:focus {
+      color: var(--link-hover);
       text-decoration: underline;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 700px) {
+      nav.toc ul {
+        columns: 1;
+      }
+
+      h1 {
+        font-size: 1.7rem;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <header id="top">
+      <h1>Créditos de imágenes — Episodio 1</h1>
+      <p class="subtitle"><em>A History of Spain in English</em></p>
+      <p><a href="index.html">← Volver a la página principal</a></p>
+    </header>
 
-<h1>Créditos de imágenes — Episodio 1</h1>
+    <nav class="toc" aria-label="Contenido">
+      <h2>Secciones</h2>
+      <ul>
+        <li><a href="#intro">Mapas y escenas introductorias de España</a></li>
+        <li><a href="#valltorta">Valltorta y arte rupestre</a></li>
+        <li><a href="#neolitico">Cazadores-recolectores, neolitización y cambio social</a></li>
+        <li><a href="#yamna">La estepa, la cultura yamna y la expansión indoeuropea</a></li>
+      </ul>
+    </nav>
 
-<p><a href="index.html">← Volver a la página principal</a></p>
+    <section class="group" id="intro">
+      <h2>Mapas y escenas introductorias de España</h2>
 
 <div class="credit-item">
-  <h3>Map of Iberia</h3>
+  <h3>Mapa de Iberia</h3>
   <ul>
     <li><strong>Autor:</strong> Hessel Gerritsz</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Map_-_Special_Collections_University_of_Amsterdam_-_OTM-_HB-KZL_32.22.12.tif">Wikimedia Commons</a></li>
@@ -66,7 +172,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Lighthouse and coast near A Coruña</h3>
+  <h3>Faro y costa cerca de A Coruña</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -75,7 +181,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic tomb in Galicia</h3>
+  <h3>Tumba neolítica en Galicia</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -84,7 +190,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Mural in Lugo</h3>
+  <h3>Mural en Lugo</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -93,7 +199,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Temple of Diana in Mérida</h3>
+  <h3>Templo de Diana en Mérida</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -102,7 +208,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Fortifications at A Coruña</h3>
+  <h3>Fortificaciones de A Coruña</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -111,7 +217,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Interior of the Palace of the Counts of Cervellón, Anna, Valencia</h3>
+  <h3>Interior del Palacio de los Condes de Cervellón, Anna, Valencia</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -120,7 +226,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Interior of the Nasrid Palaces, Alhambra, Granada</h3>
+  <h3>Interior de los Palacios Nazaríes, Alhambra, Granada</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -129,7 +235,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Interior of the chapel of the Carthusian Monastery, Granada</h3>
+  <h3>Interior de la capilla del Monasterio de la Cartuja, Granada</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -147,13 +253,19 @@
 </div>
 
 <div class="credit-item">
-  <h3>Bagpipe player in the Retiro park, Madrid</h3>
+  <h3>Gaitero en el parque del Retiro, Madrid</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
     <li><strong>Licencia:</strong> Obra original</li>
   </ul>
 </div>
+
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="valltorta">
+      <h2>Valltorta y arte rupestre</h2>
 
 <div class="credit-item">
   <h3>Escena de caça de la cova dels Cavalls, small group</h3>
@@ -165,7 +277,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Valltorta rock paintings 1</h3>
+  <h3>Pinturas rupestres de Valltorta 1</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -174,7 +286,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Valltorta rock paintings 2</h3>
+  <h3>Pinturas rupestres de Valltorta 2</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -183,7 +295,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>View of the Valltorta valley with rock shelter</h3>
+  <h3>Vista del valle de Valltorta con abrigo rocoso</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -192,7 +304,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Map showing Valltorta, Spain</h3>
+  <h3>Mapa que muestra Valltorta, España</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -201,7 +313,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Valltorta museum</h3>
+  <h3>Museo de Valltorta</h3>
   <ul>
     <li><strong>Autor:</strong> Joanbanjo</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Museu_de_la_Valltorta,_T%C3%ADrig.JPG">Wikimedia Commons</a></li>
@@ -219,7 +331,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Warrior figure from Valltorta rock art</h3>
+  <h3>Figura de guerrero del arte rupestre de Valltorta</h3>
   <ul>
     <li><strong>Autor:</strong> Unknown (see source for details)</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Valltorta_Alboc%C3%A0sser.jpg">Wikimedia Commons</a></li>
@@ -236,6 +348,12 @@
   </ul>
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="neolitico">
+      <h2>Cazadores-recolectores, neolitización y cambio social</h2>
+
 <div class="credit-item">
   <h3>Nederzetting van een paar families Bosjesmannen (San)</h3>
   <ul>
@@ -246,7 +364,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Woman hunter-gatherer foraging</h3>
+  <h3>Mujer cazadora-recolectora buscando alimentos</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -255,7 +373,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic deadfall trap</h3>
+  <h3>Trampa neolítica de caída</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -273,7 +391,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Trump and examples of spin</h3>
+  <h3>Trump y ejemplos de manipulación discursiva</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -282,7 +400,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Cheddar Man, Natural History Museum, London</h3>
+  <h3>Hombre de Cheddar, Museo de Historia Natural, Londres</h3>
   <ul>
     <li><strong>Autor:</strong> Werner Ustorf</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Cheddar_Man,_National_History_Museum,_London.jpg">Wikimedia Commons</a></li>
@@ -291,7 +409,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>DNA Lab</h3>
+  <h3>Laboratorio de ADN</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -300,7 +418,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Map of the spread of farming into Europe up to about 3900 BC</h3>
+  <h3>Mapa de la expansión de la agricultura hacia Europa hasta alrededor de 3900 a. C.</h3>
   <ul>
     <li><strong>Autor:</strong> Detlef Gronenborn, Barbara Horejs, Börner, Ober</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Expansion_of_farming_in_western_Eurasia,_9600%E2%80%934000_BCE.png">Wikimedia Commons</a></li>
@@ -309,7 +427,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic village, three huts</h3>
+  <h3>Poblado neolítico, tres chozas</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -318,7 +436,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic village</h3>
+  <h3>Poblado neolítico</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -327,7 +445,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic village, cooking pot</h3>
+  <h3>Poblado neolítico, olla de cocina</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -336,7 +454,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Farmers trading with hunter-gatherers</h3>
+  <h3>Agricultores comerciando con cazadores-recolectores</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -345,7 +463,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Mixed peoples</h3>
+  <h3>Pueblos mezclados</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -354,7 +472,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Adopting agriculture</h3>
+  <h3>Adopción de la agricultura</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -372,7 +490,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Hardworking neolithic farmers</h3>
+  <h3>Agricultores neolíticos muy trabajadores</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -381,7 +499,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Hunter-gatherer diet</h3>
+  <h3>Dieta de los cazadores-recolectores</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -390,7 +508,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic village from above</h3>
+  <h3>Poblado neolítico visto desde arriba</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -399,7 +517,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic cooking pot (closer view)</h3>
+  <h3>Olla neolítica (vista cercana)</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -408,7 +526,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Neolithic hut</h3>
+  <h3>Choza neolítica</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -417,7 +535,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Agricultural abundance</h3>
+  <h3>Abundancia agrícola</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -426,7 +544,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Map showing location of Extremadura</h3>
+  <h3>Mapa que muestra la ubicación de Extremadura</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -444,7 +562,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>A dehesa in Extremadura, Spain 1</h3>
+  <h3>Una dehesa en Extremadura, España 1</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -462,7 +580,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>A dehesa in Extremadura, Spain. Black Iberian pigs in the foreground</h3>
+  <h3>Una dehesa en Extremadura, España. Cerdos ibéricos negros en primer plano</h3>
   <ul>
     <li><strong>Autor:</strong> comakut</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Dehesa_Pigs.jpg">Wikimedia Commons</a></li>
@@ -471,7 +589,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Orbaizeta Forest</h3>
+  <h3>Bosque de Orbaizeta</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -480,7 +598,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Es Bordes Forest</h3>
+  <h3>Bosque de Es Bordes</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -489,7 +607,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>A dehesa in Extremadura, Spain 2</h3>
+  <h3>Una dehesa en Extremadura, España 2</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -498,7 +616,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Forest fire</h3>
+  <h3>Incendio forestal</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -507,7 +625,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Flooded village</h3>
+  <h3>Pueblo inundado</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -516,7 +634,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Desertified landscape</h3>
+  <h3>Paisaje desertificado</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -525,7 +643,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Agricultural surplus</h3>
+  <h3>Excedente agrícola</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -534,7 +652,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Warriors, priests and rulers</h3>
+  <h3>Guerreros, sacerdotes y gobernantes</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -543,7 +661,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Warriors, priests and rulers - warriors</h3>
+  <h3>Guerreros, sacerdotes y gobernantes - guerreros</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -552,7 +670,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Warriors, priests and rulers - priests</h3>
+  <h3>Guerreros, sacerdotes y gobernantes - sacerdotes</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -561,7 +679,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Warriors, priests and rulers - rulers</h3>
+  <h3>Guerreros, sacerdotes y gobernantes - gobernantes</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -570,7 +688,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Modern elite</h3>
+  <h3>Élite moderna</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -579,7 +697,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Sinister armed forces of order</h3>
+  <h3>Fuerzas armadas del orden siniestras</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -588,7 +706,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Outside Mérida</h3>
+  <h3>Afueras de Mérida</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -597,7 +715,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Façade inside Mérida</h3>
+  <h3>Fachada en Mérida</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -606,7 +724,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Inside the citadel in Badajoz</h3>
+  <h3>Dentro de la alcazaba de Badajoz</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -615,7 +733,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>House in Badajoz</h3>
+  <h3>Casa en Badajoz</h3>
   <ul>
     <li><strong>Autor:</strong> David Beeson</li>
     <li><strong>Fuente:</strong> Fotografía propia</li>
@@ -650,6 +768,12 @@
   </ul>
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+
+    <section class="group" id="yamna">
+      <h2>La estepa, la cultura yamna y la expansión indoeuropea</h2>
+
 <div class="credit-item">
   <h3>Territorio de la cultura yamna</h3>
   <ul>
@@ -660,7 +784,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>War in Ukraine, from Ukraine Defence Ministry</h3>
+  <h3>Guerra en Ucrania, del Ministerio de Defensa de Ucrania</h3>
   <ul>
     <li><strong>Autor:</strong> Taras Gren</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Anti-terrorist_operation_in_eastern_Ukraine_(War_Ukraine)_(26832554620).jpg">Wikimedia Commons</a></li>
@@ -678,7 +802,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Family tree of Indo-European languages</h3>
+  <h3>Árbol genealógico de las lenguas indoeuropeas</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -687,7 +811,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Donguz Steppe</h3>
+  <h3>Estepa de Donguz</h3>
   <ul>
     <li><strong>Autor:</strong> Vladdie Litvinov</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BD%D0%B3%D1%83%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D1%82%D0%B5%D0%BF%D1%8C_-_Donguz_steppe_-_panoramio.jpg">Wikimedia Commons</a></li>
@@ -696,7 +820,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Askania-Nova winter steppe</h3>
+  <h3>Estepa invernal de Askania-Nova</h3>
   <ul>
     <li><strong>Autor:</strong> NativePlanting</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Askania-Nova_winter_steppe.jpg">Wikimedia Commons</a></li>
@@ -705,7 +829,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Horses grazing near Sonköl, Kyrgyzstan</h3>
+  <h3>Caballos pastando cerca de Sonköl, Kirguistán</h3>
   <ul>
     <li><strong>Autor:</strong> Doron</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:SongKolHorses.jpg">Wikimedia Commons</a></li>
@@ -714,7 +838,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Steppe horse scraping away snow to find grass</h3>
+  <h3>Caballo estepario apartando la nieve para encontrar hierba</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -723,7 +847,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Wild Kiger herd</h3>
+  <h3>Manada salvaje de caballos Kiger</h3>
   <ul>
     <li><strong>Autor:</strong> KigerMustanger</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Kiger_Herd.jpg">Wikimedia Commons</a></li>
@@ -732,7 +856,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Pastoral nomadism</h3>
+  <h3>Nomadismo pastoral</h3>
   <ul>
     <li><strong>Autor:</strong> Hamed Saber</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Pastoral_Nomadism_(266139773).jpg">Wikimedia Commons</a></li>
@@ -741,7 +865,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya horseman alone</h3>
+  <h3>Jinete yamna solitario</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -750,7 +874,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya wheels</h3>
+  <h3>Ruedas yamna</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -759,7 +883,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya men working on wheels</h3>
+  <h3>Hombres yamna trabajando en ruedas</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -777,7 +901,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Mongolian yurt on a cart traditionally used by steppe nomads</h3>
+  <h3>Yurta mongola sobre un carro utilizado tradicionalmente por nómadas de la estepa</h3>
   <ul>
     <li><strong>Autor:</strong> Ludovic Hirlimann</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Kazakh_yurt.jpg">Wikimedia Commons</a></li>
@@ -786,7 +910,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya mounted warriors on the steppe</h3>
+  <h3>Guerreros yamna a caballo en la estepa</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -795,7 +919,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya chariot being used ceremonially</h3>
+  <h3>Carro yamna utilizado ceremonialmente</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -804,7 +928,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Yamnaya warriors overseeing emigrants</h3>
+  <h3>Guerreros yamna supervisando a emigrantes</h3>
   <ul>
     <li><strong>Autor:</strong> A History of Spain (generado con IA usando ChatGPT)</li>
     <li><strong>Fuente:</strong> Creado para este proyecto</li>
@@ -822,7 +946,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>The Founding of Australia by Capt. Arthur Phillip R.N. Sydney</h3>
+  <h3>La fundación de Australia por el capitán Arthur Phillip R.N., Sídney</h3>
   <ul>
     <li><strong>Autor:</strong> Algernon Talmage</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:The_Founding_of_Australia._By_Capt._Arthur_Phillip_R.N._Sydney_Cove,_Jan._26th_1788.jpg">Wikimedia Commons</a></li>
@@ -831,7 +955,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Spanish-American War, 1898. First hoisting of the Stars and Stripes by the US Marines on Cuban soil</h3>
+  <h3>Guerra hispano-estadounidense, 1898. Primer izado de la bandera de Estados Unidos por los marines en suelo cubano</h3>
   <ul>
     <li><strong>Autor:</strong> National Museum of the US Navy</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:LC-USZC4-2678_(17522430051).jpg">Wikimedia Commons</a></li>
@@ -840,7 +964,7 @@
 </div>
 
 <div class="credit-item">
-  <h3>Indo-European Expansion Map</h3>
+  <h3>Mapa de la expansión indoeuropea</h3>
   <ul>
     <li><strong>Autor:</strong> Joshua Jonathan</li>
     <li><strong>Fuente:</strong> <a href="https://commons.wikimedia.org/wiki/File:Indo-European_expansions1.jpg">Wikimedia Commons</a></li>
@@ -848,5 +972,8 @@
   </ul>
 </div>
 
+      <a class="back-to-top" href="#top">Volver arriba ↑</a>
+    </section>
+  </div>
 </body>
 </html>
